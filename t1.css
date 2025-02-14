@@ -1,0 +1,103 @@
+body{
+    text-decoration: dotted;
+}
+
+#main{
+    display: flex;
+}
+
+.track_list{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: start;
+    background-image: linear-gradient(to right,orange,rgb(255, 255, 255));
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+
+.track_list:hover {
+    background: linear-gradient(to right, #ff9800, white);
+}
+
+#tracks {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#sideleft {
+    width: 100px;
+    background: #ddd;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#sideleft ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sideleft ul li {
+    padding: 10px;
+    background: white;
+    margin: 5px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#audio_player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #222;
+    padding: 10px;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: orange;
+}
+
+.image{
+    position: relative;
+    width: 50px;
+    height:50px;
+    border-radius: 8px;
+    margin-right: 10px;
+
+}
+
+#header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#header ul li {
+    padding: 0 15px;
+}
+
+#header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#header ul li a:hover {
+    background-color: #111;
+    padding: 10px;
+    border-radius: 5px;
+}
