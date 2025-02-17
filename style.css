@@ -1,0 +1,162 @@
+body {
+    background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(2, 71, 2));
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#main {
+    display: flex;
+    min-height: 100vh;
+
+}
+
+/* track buttons */
+.track_list {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    text-align: start;
+    background: linear-gradient(to right, rgb(2, 71, 2), rgb(0, 0, 0));
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    color: white;
+}
+
+.track_list:hover {
+    background: linear-gradient(to right, rgb(3, 66, 3), rgb(2, 29, 4));
+}
+
+/* traks container */
+#tracks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+/* side menu */
+#sideleft {
+    width: 20%;
+    height: 100%;
+    background: #ddd;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: absolute;
+}
+
+#sideleft ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sideleft ul li {
+    padding: 10px;
+    background: white;
+    margin: 5px 0;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+}
+
+#sideleft ul li:hover {
+    background: lightgray;
+}
+
+/* player */
+#audio_player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #222;
+    padding: 5px;
+    border-radius: 0;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: rgb(2, 71, 2);
+}
+
+/* imagegggg */
+.image {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+/* header */
+#header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#header ul li {
+    padding: 0 15px;
+}
+
+#header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#header ul li a:hover {
+    background-color: #111;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.track_list {
+    animation: slideIn 0.5s ease-out forwards;
+    opacity: 0; /* Ensures it starts hidden */
+}
+
+/* Delay each track appearance */
+.track_list:nth-child(1) { animation-delay: 0.2s; }
+.track_list:nth-child(2) { animation-delay: 0.4s; }
+.track_list:nth-child(3) { animation-delay: 0.6s; }
+.track_list:nth-child(4) { animation-delay: 0.8s; }
+
+/* linkss decoration aaoaoao*/
+li a:active{
+    color:blue;
+    text-decoration: none;
+}
+
+li a {
+    color: #111;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
