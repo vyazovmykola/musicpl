@@ -13,7 +13,7 @@ const tracks = {
 
 function loadTracks(artist) {
     let trackListContainer = document.getElementById("track-list");
-    trackListContainer.innerHTML = ""; // clean trecks
+    trackListContainer.innerHTML = ""; 
     let welcome_text_clear = document.getElementById("welcome_text");
     welcome_text_clear.innerHTML = "enjoy your songs";
 

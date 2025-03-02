@@ -5,6 +5,8 @@
     font-family: "Poppins", sans-serif;
 }
 
+
+
 body {
     background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(2, 71, 2));
     color: white;
@@ -20,20 +22,29 @@ body {
 /* track buttons */
 .track_list {
     display: flex;
-    width: 100%;
-    max-width: 1200px;
+    width: 100%; 
+    max-width: 1200px; 
     align-items: center;
     text-align: start;
     background: linear-gradient(to right, rgb(2, 71, 2), rgb(0, 0, 0));
     cursor: pointer;
     border-radius: 8px;
     border: none;
-    padding: 10px;
+    padding: 15px; 
     color: white;
+    margin-bottom: 10px; 
 }
 
 .track_list:hover {
     background: linear-gradient(to right, rgb(3, 66, 3), rgb(2, 29, 4));
+    transform: translateY(-3px);
+    box-shadow: 0px 3px 6px rgba(250, 242, 242, 0.3);
+}
+
+.track_list:active{
+    cursor: pointer;
+    scale: 0.95;
+    transition: all 0.1s;
 }
 
 /* traks container */
@@ -45,7 +56,6 @@ body {
     justify-content: flex-start;
     padding: 20px;
 }
-
 
 /* side menu */
 #sideleft {
@@ -145,16 +155,16 @@ audio::-webkit-media-controls-panel {
 
 .track_list {
     animation: slideIn 0.5s ease-out forwards;
-    opacity: 0; /* Ensures it starts hidden */
+    opacity: 0;
 }
 
-/* Delay each track appearance */
+
 .track_list:nth-child(1) { animation-delay: 0.2s; }
 .track_list:nth-child(2) { animation-delay: 0.4s; }
 .track_list:nth-child(3) { animation-delay: 0.6s; }
 .track_list:nth-child(4) { animation-delay: 0.8s; }
 
-/* linkss decoration aaoaoao*/
+
 li a:active{
     color:blue;
     text-decoration: none;
